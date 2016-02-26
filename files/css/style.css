@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import "common/base.css";
+
+/*-------------------------------------------------------------------------
+	Body
+/*-----------------------------------------------------------------------*/
+html,body {
+	height:100%;
+}
+
+body {
+	overflow-x:hidden;
+}
+
+/*-------------------------------------------------------------------------
+	Button
+/*-----------------------------------------------------------------------*/
+#button {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	z-index:10;
+}
+
+	#button ul {
+	}
+	
+		#button ul li {
+			position:absolute;
+			top:0;
+			width:100px;
+			background:#333;
+			cursor:pointer;
+		}
+		
+		#button ul li.left {
+			left:0;
+		}
+		
+		#button ul li.right {
+			right:0;
+		}
+
+/*-------------------------------------------------------------------------
+	All
+/*-----------------------------------------------------------------------*/
+#all {
+	display:none;
+	position:relative;
+	width:99999px;
+	padding:60px 200px 0 120px;
+	z-index:0;
+}
+
+	#all .section {
+		display:inline;
+		float:left;
+		height:100%;
+	}
+			
+/*-------------------------------------------------------------------------
+	Section
+/*-----------------------------------------------------------------------*/
+#all .section article,
+#all .section aside {
+	margin-bottom:50px;
+}
+
+#all .section h1 {
+	margin-bottom:40px;
+	font-size:64px;
+	font-weight:bold;
+	letter-spacing:4px;
+}
+
+#all .section h2 {
+	margin-bottom:30px;
+	font-size:48px;
+	letter-spacing:2px;
+}
+
+#all .section p {
+	margin-bottom:20px;
+}
